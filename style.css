@@ -10,7 +10,7 @@
 body {
   height: 200vh;
   min-height: auto;
-  background-image: url("img/fundo.webp");
+  background-image: url("img/fundo.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,0 +1,545 @@
+/*Documento CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* border: red 1px solid; */
+}
+
+body {
+  height: 200vh;
+  min-height: auto;
+  background-image: url("img/fundo.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#linetop {
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+header {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-size: cover;
+  padding-left: 20vh;
+}
+header figure {
+  width: 100px;
+  height: 100px;
+  margin-right: 9%;
+  margin-left: 10%;
+}
+img {
+  width: 100px;
+}
+header h1 {
+  font-size: 90px;
+  font-family: "Abril Fatface";
+  justify-content: center;
+  color: white;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+nav img {
+  align-items: end;
+  width: 50px;
+  height: 25px;
+  padding-right: 30px;
+}
+.instagram-link {
+  display: flex;
+  align-items: center;
+}
+.instagram-icon {
+  display: inline-block;
+  width: 20px; /* Adjust as needed */
+  height: 25px; /* Adjust as needed */
+  fill: #000; /* Replace with desired icon color */
+  margin-right: 5px; /* Add space between icon and text */
+}
+#nav1 {
+  border-bottom: 5px solid darkgray;
+}
+#nav2 {
+  margin-left: 150px;
+  border-bottom: 5px solid darkgray;
+}
+#nav3 {
+  margin-left: 150px;
+  border-bottom: 5px solid darkgray;
+}
+#nav4 {
+  margin-left: 150px;
+  border-bottom: 5px solid darkgray;
+}
+nav ul li a:hover {
+  background-color: darkgrey;
+  border-bottom: 5px solid white;
+}
+main {
+  display: flex;
+  padding-left: 10vh;
+  padding-top: 10vh;
+}
+.title-container {
+  border: #000;
+  background-color: black;
+  height: 15%;
+  width: 23%;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-left: 30vh;
+    margin-top: 10vh; */
+  color: white;
+}
+
+.card {
+  width: 300px; /* Ajuste a largura como desejar */
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+
+  margin-left: 10vh;
+}
+
+.card img {
+  width: 100%;
+
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  opacity: 100%;
+}
+
+.card-content {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.card-content h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  line-height: 1.6;
+}
+
+.player-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.play-button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #00698d;
+}
+
+/* cabeçalho */
+@media screen and (max-width: 1280px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+  }
+  main {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+
+  nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  #nav1 {
+    border-bottom: 5px solid darkgray;
+  }
+  #nav2 {
+    margin-left: 120px;
+    border-bottom: 5px solid darkgray;
+  }
+  #nav3 {
+    margin-left: 120px;
+    border-bottom: 5px solid darkgray;
+  }
+  #nav4 {
+    margin-left: 120px;
+    
+    border-bottom: 5px solid darkgray;
+  }
+
+  .title-container {
+    width: 200px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  #linetop {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 150px;
+  }
+  figure {
+    padding-top: 3px;
+    width: 300px;
+    height: 100px;
+  }
+  img {
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 80px;
+    font-family: "Abril Fatface";
+    
+    width: 600px;
+    color: white;
+    margin-right: 30px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+  }
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title-container {
+    width: 200px;
+    margin-left: 45px;
+  }
+
+  #linetop {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 150px;
+  }
+  figure {
+    padding-top: 3px;
+    width: 300px;
+    height: 100px;
+  }
+  img {
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 30px;
+    font-family: "Abril Fatface";
+    height: 40px;
+    width: 230px;
+    color: white;
+    margin-right: 30px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+  }
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title-container {
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  #linetop {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 150px;
+  }
+  figure {
+    padding-top: 13px;
+    width: 300px;
+    height: 100px;
+   
+  }
+  img {
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 30px;
+    font-family: "Abril Fatface";
+    height: 40px;
+    width: 290px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 393px) {
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+    
+  }
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title-container {
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  #linetop {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 150px;
+  }
+  figure {
+    padding-top: 13px;
+    width: 300px;
+    height: 100px;
+   
+  }
+  img {
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 30px;
+    font-family: "Abril Fatface";
+    height: 40px;
+    width: 290px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  body {
+    padding: 0;
+    
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red 1px solid; */
+  }
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title-container {
+    width: 200px;
+    margin-left: 7px;
+  }
+
+  #linetop {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 150px;
+  }
+  figure {
+    padding-top: 13px;
+    width: 300px;
+    height: 100px;
+   
+  }
+  img {
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 25px;
+    font-family: "Abril Fatface";
+    height: 40px;
+    width: 240px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
